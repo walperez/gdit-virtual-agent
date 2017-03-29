@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>IBM Watson Virtual Agent Chat Widget Sample</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+		<style>
+html, body, iframe { width: 100%; height:100%; padding:0; margin:0; }
+#ibm_chat_root { position:fixed; bottom:0; right: 20px; height: 80%; min-height:400px; width:300px; background:#000; }
+		</style>
+	</head>
+<body>
+	<div id="ibm_chat_root"></div>
+		<iframe style="width:100%; height:100%" src="http://www.ibm.com/us-en/"></iframe>
+<!--
+		https://dp1-bot-chat.mybluemix.net/IBMChatClient-vX.X.X.js for a specific version
+		In your production environment, we recommend locking down your widget version. See https://www.npmjs.com/package/@watson-virtual-agent/chat-widget for the list of versions.
+-->
+
+	<div id="ibm_el" class="w3-half w3-container w3-clear" style="margin:0 auto; text-align: center; height:50%; width:100%; margin-top: 10px;" ></div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src='js/bundle.js'></script>
+	</div>
+	
+		<script src='https://dp1-bot-chat.mybluemix.net/IBMChatClient-latest.js'></script>
+		<script>
+IBMChat.init({
+	el: 'ibm_chat_root',
+	baseURL: 'https://api.ibm.com/virtualagent/run/api/v1',
+	botID: '028683be-d61d-4c00-a071-eed8b422878f',
+	XIBMClientID: '282f437a-d815-4ef2-a43a-a711c9e6d2b2',
+	XIBMClientSecret: 'B2sT2gK2tO2sQ0tY4uX5mB5rH2jA6fI5fF4oE8bO2tV7uJ7qO8'
+});
+// version parameter: '2016-09-16'
+		</script>
+	</body>
+</html>
