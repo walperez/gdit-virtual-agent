@@ -172,9 +172,9 @@ IBMChat.registerLayout('payBalance', layoutInit);
 IBMChat.init({
   el: 'ibm_el',
   baseURL: 'https://api.ibm.com/virtualagent/run/api/v1/',
-  botID: '028683be-d61d-4c00-a071-eed8b422878f',
-  XIBMClientID: '282f437a-d815-4ef2-a43a-a711c9e6d2b2',
-  XIBMClientSecret: 'B2sT2gK2tO2sQ0tY4uX5mB5rH2jA6fI5fF4oE8bO2tV7uJ7qO8',
+  botID: 'b8835c93-29cb-4942-b9a5-24f5425cd249',
+  XIBMClientID: '06d5aa28-ceed-48c1-a2be-d041d1fa5896',
+  XIBMClientSecret: 'yQ4tL1mS1uD8pE2aR5wD1tP5fS0yB4hW1aE3gB6cO3mN8oT0aA',
   styles: {
     background: '#f1f1f1',
     accentBackground: '#9c27b0', // The bars on the side of the text and under "Enter message"
